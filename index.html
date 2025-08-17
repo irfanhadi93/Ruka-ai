@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruka Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- File logika chatbot -->
+  <script src="knowledge.js" defer></script>
+  <script src="getknowledge.js" defer></script>
+  <script src="data-latih.js" defer></script>
+
+  <!-- Firebase (pakai compat agar jalan di <script> biasa) -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+  <script src="firebase.js"></script> <!-- file buatanmu -->
+
+  <!-- File tambahan -->
+  <script src="memori.js" defer></script>
+  <script src="hitungkemiripan.js" defer></script>
+  <script src="mirip.js" defer></script>
+  <script src="pesan.js" defer></script>
+  <script src="respon.js" defer></script>
+  <script src="ruka.js" defer></script>
+</head>
+<body>
+  <div class="chat-wrapper">
+    <div id="chat-container" class="chat-box"></div>
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="Tulis pesan..." autocomplete="off" />
+      <button onclick="kirimPesan()">➤</button>
+    </div>
+  </div>
+</body>
+</html>
